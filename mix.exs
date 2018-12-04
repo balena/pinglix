@@ -43,10 +43,11 @@ defmodule Pinglix.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [
+      {:timex, "~> 3.4"},
+      {:poison, "~> 3.1"},
+      {:plug_cowboy, "~> 2.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:dialyxir, "~> 0.5", only: :dev},
-      {:timex, "~> 3.0"},
-      {:poison, "~> 3.1.0"},
-      {:plug, "~> 1.0"}]
+    ]
   end
 end
